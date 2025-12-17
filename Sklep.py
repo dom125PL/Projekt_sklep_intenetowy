@@ -1,0 +1,1 @@
+#Gluwny plik z Strony
