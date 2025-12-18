@@ -43,13 +43,12 @@ def brutto(cena_netto, vat=0.23):
 cena_brutto = (brutto(koszyk(zakupy_inp)))
 
 
+print("Reszta bedzie wynosila:", portfel-cena_brutto)
 zgoda = input("Czy podtwierdzasz tranzakcje (tak/nie):")
 
 if zgoda == "tak":
     if portfel >= cena_brutto:
         print("Dzekujemy za zakup")
-        print("Reszta wynosi:" )
-        print(portfel-cena_brutto)
     else:
         print("Niewystarczajaco pieniedzy")
 else:
