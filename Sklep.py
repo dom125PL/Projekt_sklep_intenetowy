@@ -34,9 +34,24 @@ def koszyk(zakupy_inp):
             return produkty["cena_netto"]
         
 
-print(koszyk(zakupy_inp))        
+def brutto(cena_netto, vat=0.23):
+    return ((cena_netto*vat)+cena_netto)
 
 
 
+      
+cena_brutto = (brutto(koszyk(zakupy_inp)))
 
+
+zgoda = input("Czy podtwierdzasz tranzakcje (tak/nie):")
+
+if zgoda == "tak":
+    if portfel >= cena_brutto:
+        print("Dzekujemy za zakup")
+        print("Reszta wynosi:" )
+        print(portfel-cena_brutto)
+    else:
+        print("Niewystarczajaco pieniedzy")
+else:
+    print("Anulowanie tranzakcji")
 
