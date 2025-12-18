@@ -2,3 +2,4 @@
 Dominik Zaluza
 Karina Kreminska
 ala ma kota 
+Kostiantyn Skopetskyi
