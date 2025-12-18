@@ -38,13 +38,14 @@ def brutto(cena_netto, vat=0.23):
     return ((cena_netto*vat)+cena_netto)
 
 
-
-      
+#Cena wybranego produktu z dodanym vat      
 cena_brutto = (brutto(koszyk(zakupy_inp)))
 
 
+#Potwierdzenie tranzakcji
 zgoda = input("Czy podtwierdzasz tranzakcje (tak/nie):")
 
+#Przetwarzanie tranzakcji i sprawdzanie stanu portfela klienta
 if zgoda == "tak":
     if portfel >= cena_brutto:
         print("Dzekujemy za zakup")
